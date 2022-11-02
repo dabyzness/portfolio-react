@@ -1,0 +1,30 @@
+.container {
+  height: calc(100vh - 3rem);
+  margin-top: 3rem;
+}
+
+.background {
+  background-color: red;
+  height: 100%;
+  width: 50%;
+  transition: width 1s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.active {
+  width: 100%;
+}
+
+.hello {
+  height: 100vh;
+  color: black;
+  font-size: 5rem;
+  text-align: center;
+  transform: translate(0, -75%);
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.hi {
+  padding-left: 50%;
+}
