@@ -84,7 +84,75 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.container}></div>
+      <div className={styles.container} style={{ height: "400px" }}>
+        <div className={styles.skillsContainer}>
+          <h2>Tech Stack</h2>
+          <div className={styles.skills}>
+            <img src="./img/aws.png" alt="AWS" />
+            <img src="./img/bootstrap.png" alt="Bootstrap" />
+            <img src="./img/C.png" alt="C" />
+            <img src="./img/cpp.png" alt="C++" />
+            <img src="./img/django.png" alt="Django" />
+            <img src="./img/docker.png" alt="Docker" />
+            <img src="./img/express.png" alt="Express.JS" />
+            <img src="./img/flask.png" alt="Flask" />
+            <img src="./img/javascript.png" alt="JavaScript" />
+            <img src="./img/mongodb.png" alt="MongoDB" />
+            <img src="./img/mui.png" alt="MUI" />
+            <img src="./img/netlify.png" alt="Netlify" />
+            <img src="./img/nodejs.png" alt="Node.JS" />
+            <img src="./img/postgresql.png" alt="PostgreSQL" />
+            <img src="./img/redis.png" alt="Redis" />
+            <img src="./img/typescript.png" alt="TypeScript" />
+            <img src="./img/css3.png" alt="CSS3" />
+            <img src="./img/html5.png" alt="HTML5" />
+            <img src="./img/python.png" alt="Python" />
+            <img src="./img/react.png" alt="React" />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <h2
+            style={{ width: "75%", textAlign: "center", marginBottom: "8px" }}
+          >
+            Thank you for stopping by
+          </h2>
+          <p style={{ marginBottom: "8px", marginTop: "8px" }}>
+            Before you go, treat yourself to a quick stretch! We sit at our
+            computers motionless, for hours at a time, let's do some quick neck
+            stretches to relieve ourselves of some of that stress we've been
+            holding onto! Breathe along to the pulsating orb on the right.
+          </p>
+          <ul style={{ listStyleType: "decimal", width: "75%" }}>
+            <li>
+              Extend your left arm down to the left. Tilt your head to the right
+              and place your right palm on top of your head, gently pressing
+              down. Hold for 5 breath cycles. Repeat on the other side.
+            </li>
+            <li>
+              With a straigth back, tilt your head as far back as you can manage
+              and hold for 5 breath cycles.
+            </li>
+            <li>
+              With a straigth back, tilt you head down, chin to torso and hold
+              for 5 breaths cycles.
+            </li>
+            <li>
+              Extend your arms to the side, parallel to the floor. Bend your
+              arms up at a 90 degree angle, with your palms facing forward. Try
+              to push your elbows backwards to feel a stretch in your upper
+              back. Hold for 10 breath cycles.
+            </li>
+          </ul>
+        </div>
+        <div className={styles.right}>
+          <div className={styles.circle}>
+            <span></span>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
