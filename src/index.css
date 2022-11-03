@@ -1,3 +1,8 @@
+@font-face {
+  font-family: TypoGraphica;
+  src: url("./fonts/Typographica.ttf");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

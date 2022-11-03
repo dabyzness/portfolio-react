@@ -1,30 +1,128 @@
 .container {
+  scroll-snap-align: start;
+}
+
+.helloContainer {
   height: calc(100vh - 3rem);
   margin-top: 3rem;
-}
-
-.background {
-  background-color: red;
-  height: 100%;
-  width: 50%;
-  transition: width 1s;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.active {
+  display: flex;
   width: 100%;
-}
-
-.hello {
-  height: 100vh;
-  color: black;
-  font-size: 5rem;
-  text-align: center;
-  transform: translate(0, -75%);
-  transition: all 1s;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  font-family: TypoGraphica;
 }
 
 .hi {
-  padding-left: 50%;
+  width: 40%;
+  background-color: red;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hi > p {
+  font-size: 8rem;
+  font-family: TypoGraphica;
+  color: white;
+}
+
+.name {
+  padding-top: 4rem;
+
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s;
+}
+
+.name > span {
+  font-size: 4rem;
+
+  transition: 0.5s;
+}
+
+.lastName {
+  color: red;
+  /* text-decoration-color: red; */
+  /* text-decoration: solid underline;
+  text-decoration-style: wavy; */
+  cursor: pointer;
+
+  background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
+  background-size: 20px 0.5rem;
+  background-repeat: repeat-x;
+  background-position: 100% 90%;
+  font-weight: 400;
+  animation: move 20s linear infinite;
+}
+
+.pronunciation {
+  color: black;
+  transition: 0.5s;
+}
+
+.pronunciation > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pronunciation > ul > li {
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+.active > ul > li:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.active > ul > li:nth-child(2) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.active > ul > li:nth-child(3) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.active > ul > li:nth-child(4) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.pronunciation > ul > li > span {
+  font-style: italic;
+  color: red;
+  font-size: 2rem;
+}
+
+.pronunciation > ul > li > span:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.pronunciation > ul > li > span:last-of-type {
+  margin-left: 0.5rem;
+  margin-right: 2px;
+}
+
+.active {
+  display: block;
+}
+
+@keyframes move {
+  from {
+    background-position: 100% 90%;
+  }
+  to {
+    background-position: 500% 90%;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
