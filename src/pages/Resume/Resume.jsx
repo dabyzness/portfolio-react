@@ -135,8 +135,8 @@ const Resume = () => {
 
       <a href="./img/react.png" className={styles.btnSlide2} download>
         <span className={styles.circle2}></span>
-        <span className={styles.title2}>Download</span>
-        <span className={styles.titleHover2}>Resume</span>
+        <span className={styles.title2}>Download CV</span>
+        <span className={styles.titleHover2}>Click Here</span>
       </a>
     </main>
   );

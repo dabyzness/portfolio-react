@@ -14,12 +14,9 @@ export default function NavBar() {
         <li className={styles.item}>
           <Link to="/resume">Resume</Link>
         </li>
-        <li className={styles.item}>
-          <Link to="/about">About</Link>
-        </li>
-        <li className={styles.item}>
+        {/* <li className={styles.item}>
           <Link to="/contact">Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

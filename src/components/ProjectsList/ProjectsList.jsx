@@ -4,11 +4,7 @@ const ProjectsList = ({ projects }) => {
   return (
     <ul>
       {projects.map((project) => (
-        <ProjectPreview
-          key={project.title}
-          title={project.title}
-          image={project.img}
-        />
+        <ProjectPreview key={project.title} project={project} />
       ))}
     </ul>
   );
