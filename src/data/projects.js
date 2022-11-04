@@ -51,7 +51,7 @@ export const projects = [
     img: "./img/TTT-pro.PNG",
     repositoryLink:
       "https://github.com/dabyzness/ttt-weekend/tree/main/version2",
-    deploymentLink: "",
+    deploymentLink: "https://tic-tac-toe-pro-no.netlify.app",
     stack: ["javascript", "html5", "css3"],
   },
   {
