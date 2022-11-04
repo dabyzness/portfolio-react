@@ -67,12 +67,12 @@ export default function Home() {
         <div className={styles.right2}>
           <h2>About Me</h2>
           <p>
-            I'm a first generation immigrant of Polish descent. Although I was
-            born in another country, I emigrated from Poland at a very early
-            age, and so I hold my culture close to my heart. I am deeply
-            saddened whenever there aren't any good pickles, kielbasa, or loaves
-            of bread nearby. I'm sure by the adjacent image you can tell what my
-            favorite food is <span>(hint, it's pierogi)</span>.
+            I’m a first generation immigrant of Polish descent. Though I
+            emigrated from Poland when I was young, I hold my culture close to
+            my heart. I am deeply saddened whenever there aren't any good
+            pickles, kielbasa, or loaves of bread nearby. I'm sure by the
+            adjacent image you can tell what my favorite food is{" "}
+            <span>(hint, it's pierogi)</span>.
           </p>
           <p>
             During my spare time I like to go hiking with my dog, Beans, watch
