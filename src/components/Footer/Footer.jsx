@@ -8,14 +8,18 @@ const Footer = (props) => {
           <img src="./img/mail.png" alt="e-mail" style={{ height: "1rem" }} />
           <span style={{ marginLeft: ".5rem" }}>bzdyrad@gmail.com</span>
         </div>
-        <a href="https://github.com/dabyzness">
+        <a href="https://github.com/dabyzness" rel="noreferrer" target="_blank">
           <img
             src="./img/github.png"
             alt="github"
             style={{ height: "1.5rem", marginLeft: "auto" }}
           />
         </a>
-        <a href="https://www.linkedin.com/in/bzdyrad/">
+        <a
+          href="https://www.linkedin.com/in/bzdyrad/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img
             src="./img/linkedin.png"
             alt="linkedin"
