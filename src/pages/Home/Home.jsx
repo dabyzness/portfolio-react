@@ -17,11 +17,7 @@ export default function Home() {
         <div className={styles.name}>
           <span>Im</span>
           <span>Damian</span>
-          <span
-            className={styles.lastName}
-            spellCheck="true"
-            onClick={handleClick}
-          >
+          <span className={styles.lastName} onClick={handleClick}>
             Bzdyra
           </span>
           <div className={styles.pronunciation} ref={lastRef}>
@@ -84,7 +80,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.container} style={{ height: "400px" }}>
+      <div className={styles.container}>
         <div className={styles.skillsContainer}>
           <h2>Tech Stack</h2>
           <div className={styles.skills}>
