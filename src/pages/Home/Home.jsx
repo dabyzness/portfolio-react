@@ -72,10 +72,10 @@ export default function Home() {
           </p>
           <p>
             During my spare time I like to go hiking with my dog, Beans, watch
-            avant-garde movies, collect records, and cook extravagant meals. I
-            have a pretty heavy-duty DIY attitude so occasionally you might find
-            me tinkering with a Raspberry Pi, woodworking, gardening,
-            embroidering, or even fermenting my own foods!
+            arthouse films, collect records, and cook extravagant meals. I have
+            a pretty heavy-duty DIY attitude so occasionally you might find me
+            tinkering with a Raspberry Pi, woodworking, gardening, embroidering,
+            or even fermenting my own foods!
           </p>
         </div>
       </div>
@@ -128,12 +128,12 @@ export default function Home() {
               down. Hold for 5 breath cycles. Repeat on the other side.
             </li>
             <li>
-              With a straigth back, tilt your head as far back as you can manage
+              With a straight back, tilt your head as far back as you can manage
               and hold for 5 breath cycles.
             </li>
             <li>
-              With a straigth back, tilt you head down, chin to torso and hold
-              for 5 breaths cycles.
+              With a straight back, tilt you head down, chin to torso, and hold
+              for 5 breath cycles.
             </li>
             <li>
               Extend your arms to the side, parallel to the floor. Bend your
