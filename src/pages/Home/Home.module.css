@@ -128,42 +128,51 @@
 }
 
 .container {
-  height: 500px;
+  min-height: 500px;
   background-color: white;
   display: flex;
 }
 
 .left {
-  height: 100%;
-  width: 60%;
-  background-color: white;
+  height: inherit;
+  width: 50%;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  /* border: 1px solid black; */
 }
 
 .left > h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: TypoGraphica;
   letter-spacing: 6px;
+  text-align: right;
+  margin: 0 0 0 auto;
 }
 
 .left > p {
-  width: 75%;
-  text-align: justify;
+  width: 85%;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 5px;
+  line-height: 2rem;
 }
 
 .right {
+  min-height: 500px;
   height: 100%;
-  width: 40%;
-  background-color: white;
+  width: 50%;
+  background-color: whitesmoke;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
 .right > img {
+  margin: auto;
   height: 250px;
   width: 250px;
   border: 5px solid white;
@@ -174,14 +183,14 @@
 
 .left2 {
   height: 100%;
-  width: 40%;
+  width: 50%;
   background-image: url("../../assets/img/pierogi2.png");
   background-size: cover;
 }
 
 .right2 {
-  height: 100%;
-  width: 60%;
+  height: inherit;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,14 +198,18 @@
 }
 
 .right2 > h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: TypoGraphica;
   letter-spacing: 6px;
+  margin: 0 auto 0 8px;
 }
 
 .right2 > p {
-  width: 75%;
-  text-align: justify;
+  width: 85%;
+  /* text-align: justify; */
+  margin-right: auto;
+  margin-left: 5px;
+  line-height: 2rem;
 }
 
 .container:nth-of-type(4) {
@@ -205,6 +218,7 @@
 }
 
 .skillsContainer {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -370,7 +384,7 @@
 
   .right > img {
     height: auto;
-    width: 75%;
+    width: 60%;
   }
 
   .circle {

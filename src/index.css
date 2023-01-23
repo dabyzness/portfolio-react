@@ -1,6 +1,7 @@
 @font-face {
   font-family: TypoGraphica;
-  src: url("./fonts/Typographica.ttf");
+  /* src: url("./fonts/Typographica.ttf"); */
+  src: url(./fonts/SYNNova-Bold.otf);
 }
 
 body {

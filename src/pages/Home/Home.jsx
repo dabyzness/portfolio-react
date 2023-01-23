@@ -12,10 +12,11 @@ export default function Home() {
     <main>
       <div className={styles.helloContainer}>
         <div className={styles.hi}>
-          <p>Hi</p>
+          <p>Cześć</p>
+          {/* <p>Hi</p> */}
         </div>
         <div className={styles.name}>
-          <span>Im</span>
+          <span>I'm</span>
           <span>Damian</span>
           <span className={styles.lastName} onClick={handleClick}>
             Bzdyra
