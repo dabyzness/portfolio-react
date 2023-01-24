@@ -4,32 +4,33 @@ const Footer = (props) => {
   return (
     <footer style={{ marginTop: "5px" }}>
       <div className={styles.container}>
-        <div style={{ marginLeft: "1rem", width: "100%" }}>
-          <img src="./img/mail.png" alt="e-mail" style={{ height: "1rem" }} />
-          <span style={{ marginLeft: ".5rem" }}>bzdyrad@gmail.com</span>
-        </div>
-        <a href="https://github.com/dabyzness" rel="noreferrer" target="_blank">
-          <img
-            src="./img/github.png"
-            alt="github"
-            style={{ height: "1.5rem", marginLeft: "auto" }}
-          />
+        <div className={styles.verticalLine1}></div>
+        <a href="" className={styles.link}>
+          <img src="./img/mail.png" alt="e-mail" />
         </a>
+        <div className={styles.dot}></div>
         <a
-          href="https://www.linkedin.com/in/bzdyrad/"
+          href="https://github.com/dabyzness"
+          className={styles.link}
           rel="noreferrer"
           target="_blank"
         >
-          <img
-            src="./img/linkedin.png"
-            alt="linkedin"
-            style={{
-              marginLeft: "1rem",
-              marginRight: "1rem",
-              height: "1.6rem",
-            }}
-          />
+          <img src="./img/github.png" alt="github" />
         </a>
+        <div className={styles.dot}></div>
+        <a
+          href="https://www.linkedin.com/in/bzdyrad/"
+          className={styles.link}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img src="./img/linkedin.png" alt="linkedin" />
+        </a>
+        <div className={styles.dot}></div>
+        <p className={styles.scroll}>scroll</p>
+        <i className={`${styles.arrow} ${styles.down}`}></i>
+        <i className={`${styles.arrow} ${styles.down}`}></i>
+        <i className={`${styles.arrow} ${styles.down}`}></i>
       </div>
     </footer>
   );
