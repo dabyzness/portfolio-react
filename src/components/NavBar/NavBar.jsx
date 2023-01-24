@@ -1,11 +1,21 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
-export default function NavBar() {
+export default function NavBar({ show }) {
+  const home = useRef();
+
   return (
     <nav>
       <ul className={styles.container}>
-        <li className={styles.home}>
+        <li
+          className={
+            show
+              ? `${styles.home} ${styles.bottomUp}`
+              : `${styles.home} ${styles.topDown}`
+          }
+          ref={home}
+        >
           <span className={styles.initial}>D</span>amian{" "}
           <span className={styles.initial}>B</span>zdyra
         </li>

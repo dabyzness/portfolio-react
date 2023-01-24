@@ -1,5 +1,6 @@
 // Modules
 import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 // CSS
 import "./App.css";
 // Components
@@ -14,9 +15,26 @@ import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+  const [show, setShow] = useState(false);
+  const [scrollPos, setScrollPos] = useState(window.scrollY);
+
+  window.addEventListener("scroll", updatePosition);
+
+  function updatePosition() {
+    setScrollPos(window.scrollY);
+  }
+
+  useEffect(() => {
+    if (window.innerHeight - scrollPos < window.innerHeight * 0.33) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  }, [scrollPos]);
+
   return (
     <>
-      <NavBar />
+      <NavBar show={show} />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/about" element={<About />} /> */}

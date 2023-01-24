@@ -9,8 +9,6 @@ export default function Home() {
   const profileRef = useRef();
 
   const updatePosition = () => {
-    console.log(window.innerHeight - window.scrollY);
-
     if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
       welcomeRef.current.style.display = "none";
       profileRef.current.style.display = "block";
