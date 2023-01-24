@@ -8,16 +8,40 @@
   display: flex;
   width: 100%;
   font-family: TypoGraphica;
+  overflow: hidden;
+}
+
+.helloContainer > .right {
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  animation: 0.1s fade-in-width 5.9s forwards, 1s display-picture 6s forwards;
+}
+
+@keyframes fade-in-width {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes display-picture {
+  to {
+    opacity: 1;
+  }
 }
 
 .hi {
-  width: 40%;
+  /* width: 40%; */
   background-color: red;
   height: 100%;
+  width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  animation: 1s slide 4.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .hi > p {
@@ -26,10 +50,67 @@
   color: white;
 }
 
+.hi > p::before {
+  content: "Hi";
+  animation: 1.25s fade-in-hi, 1.25s fade-out-hi 1.25s, 1.25s fade-in-czesc 2.5s,
+    1.25s fade-out-czesc 3.75s forwards;
+}
+
+@keyframes slide {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes fade-in-hi {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-hi {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-czesc {
+  from {
+    content: "Czesc";
+    opacity: 0;
+  }
+  to {
+    content: "Czesc";
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-czesc {
+  from {
+    content: "Czesc";
+    opacity: 1;
+  }
+  to {
+    content: "Czesc";
+    opacity: 0;
+  }
+}
+
 .name {
   padding-top: 4rem;
 
-  width: 60%;
+  width: 0%;
   height: 100%;
 
   display: flex;
@@ -37,13 +118,42 @@
   justify-content: center;
   align-items: center;
 
-  transition: 0.5s;
+  animation: 1s appear-name 4.5s forwards;
+
+  /* overflow: hidden; */
+
+  /* transition: 0.5s; */
+}
+
+@keyframes appear-name {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
 }
 
 .name > span {
   font-size: 4rem;
 
   transition: 0.5s;
+}
+
+.name > span:first-of-type {
+  transform: translateX(1200px);
+  animation: 1s slide-left 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.name > span:nth-child(2) {
+  transform: translateX(1200px);
+  animation: 1s slide-left 5.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(0);
+  }
 }
 
 .lastName {
@@ -58,7 +168,9 @@
   background-repeat: repeat-x;
   background-position: 100% 90%;
   font-weight: 400;
-  animation: move 20s linear infinite;
+  transform: translateX(1200px);
+  animation: move 20s linear infinite,
+    1s slide-left 5.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .pronunciation {

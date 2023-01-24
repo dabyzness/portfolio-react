@@ -12,9 +12,10 @@ export default function Home() {
     <main>
       <div className={styles.helloContainer}>
         <div className={styles.hi}>
-          <p>Cześć</p>
+          <p></p>
           {/* <p>Hi</p> */}
         </div>
+
         <div className={styles.name}>
           <span>I'm</span>
           <span>Damian</span>
@@ -35,6 +36,10 @@ export default function Home() {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div className={styles.right}>
+          <img src="./img/profile.jpg" alt="profile" />
         </div>
       </div>
 
