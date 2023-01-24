@@ -1,8 +1,8 @@
 import styles from "./Footer.module.css";
 
-const Footer = (props) => {
+const Footer = ({ isBottom }) => {
   return (
-    <footer style={{ marginTop: "5px" }}>
+    <footer>
       <div className={styles.container}>
         <div className={styles.verticalLine1}></div>
         <a href="" className={styles.link}>
@@ -24,13 +24,25 @@ const Footer = (props) => {
           rel="noreferrer"
           target="_blank"
         >
-          <img src="./img/linkedin.png" alt="linkedin" />
+          <img src="./img/linkedin-black.png" alt="linkedin" />
         </a>
         <div className={styles.dot}></div>
         <p className={styles.scroll}>scroll</p>
-        <i className={`${styles.arrow} ${styles.down}`}></i>
-        <i className={`${styles.arrow} ${styles.down}`}></i>
-        <i className={`${styles.arrow} ${styles.down}`}></i>
+        <i
+          className={
+            !isBottom ? `${styles.arrow} ${styles.down}` : styles.atBottom
+          }
+        ></i>
+        <i
+          className={
+            !isBottom ? `${styles.arrow} ${styles.down}` : styles.atBottom
+          }
+        ></i>
+        <i
+          className={
+            !isBottom ? `${styles.arrow} ${styles.down}` : styles.atBottom
+          }
+        ></i>
       </div>
     </footer>
   );

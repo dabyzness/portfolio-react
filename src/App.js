@@ -17,6 +17,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   const [show, setShow] = useState(false);
   const [scrollPos, setScrollPos] = useState(window.scrollY);
+  const [isBottom, setIsBottom] = useState(false);
 
   window.addEventListener("scroll", updatePosition);
 
@@ -29,6 +30,12 @@ function App() {
       setShow(true);
     } else {
       setShow(false);
+    }
+
+    if (scrollPos > 2030) {
+      setIsBottom(true);
+    } else {
+      setIsBottom(false);
     }
   }, [scrollPos]);
 
@@ -43,7 +50,7 @@ function App() {
         <Route path="/projects/:projectDetails" element={<ProjectDetails />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
-      <Footer />
+      <Footer isBottom={isBottom} />
     </>
   );
 }
