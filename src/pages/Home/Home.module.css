@@ -12,11 +12,19 @@
 }
 
 .helloContainer > .right {
+  position: sticky;
   background-color: white;
-  overflow: hidden;
+  height: 100%;
   width: 0;
   opacity: 0;
   animation: 0.1s fade-in-width 5.9s forwards, 1s display-picture 6s forwards;
+}
+
+.helloContainer > .right > img {
+  position: fixed;
+  height: auto;
+  width: calc((100vw - (100vw - 1300px)) * 0.3);
+  top: 50;
 }
 
 @keyframes fade-in-width {

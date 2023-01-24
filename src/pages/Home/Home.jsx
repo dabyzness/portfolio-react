@@ -1,8 +1,29 @@
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./Home.module.css";
 
 export default function Home() {
   const lastRef = useRef();
+
+  // This needs fixing because its not a smooth transition
+  const welcomeRef = useRef();
+  const profileRef = useRef();
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const updatePosition = () => {
+    setScrollPosition(window.scrollY);
+    // console.log("offset", window.pageYOffset);
+
+    console.log(window.innerHeight - window.scrollY);
+
+    if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
+      welcomeRef.current.style.display = "none";
+      profileRef.current.style.display = "block";
+    } else {
+      profileRef.current.style.display = "none";
+      welcomeRef.current.style.display = "block";
+    }
+  };
+  window.addEventListener("scroll", updatePosition);
 
   const handleClick = (e) => {
     lastRef.current.className = `${styles.pronunciation} ${styles.active}`;
@@ -39,7 +60,7 @@ export default function Home() {
         </div>
 
         <div className={styles.right}>
-          <img src="./img/profile.jpg" alt="profile" />
+          <img src="./img/profile.jpg" alt="profile" ref={welcomeRef} />
         </div>
       </div>
 
@@ -59,7 +80,7 @@ export default function Home() {
         </div>
 
         <div className={styles.right}>
-          <img src="./img/profile.jpg" alt="profile" />
+          <img src="./img/profile.jpg" alt="profile" ref={profileRef} />
         </div>
       </div>
 
