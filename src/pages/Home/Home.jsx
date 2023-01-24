@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -7,12 +7,8 @@ export default function Home() {
   // This needs fixing because its not a smooth transition
   const welcomeRef = useRef();
   const profileRef = useRef();
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   const updatePosition = () => {
-    setScrollPosition(window.scrollY);
-    // console.log("offset", window.pageYOffset);
-
     console.log(window.innerHeight - window.scrollY);
 
     if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
@@ -23,6 +19,7 @@ export default function Home() {
       welcomeRef.current.style.display = "block";
     }
   };
+
   window.addEventListener("scroll", updatePosition);
 
   const handleClick = (e) => {

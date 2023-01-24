@@ -95,22 +95,22 @@
 
 @keyframes fade-in-czesc {
   from {
-    content: "Czesc";
+    content: "Cześć";
     opacity: 0;
   }
   to {
-    content: "Czesc";
+    content: "Cześć";
     opacity: 1;
   }
 }
 
 @keyframes fade-out-czesc {
   from {
-    content: "Czesc";
+    content: "Cześć";
     opacity: 1;
   }
   to {
-    content: "Czesc";
+    content: "Cześć";
     opacity: 0;
   }
 }
