@@ -24,7 +24,16 @@ const Footer = ({ isBottom }) => {
           rel="noreferrer"
           target="_blank"
         >
-          <img src="./img/linkedin-black.png" alt="linkedin" />
+          <img
+            src="./img/linkedin-black.png"
+            alt="linkedin"
+            onMouseOver={(e) => {
+              e.target.src = "./img/linkedin-red.png";
+            }}
+            onMouseOut={(e) => {
+              e.target.src = "./img/linkedin-black.png";
+            }}
+          />
         </a>
         <div className={styles.dot}></div>
         <p className={styles.scroll}>scroll</p>

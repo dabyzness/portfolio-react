@@ -106,24 +106,32 @@ export default function Home() {
         <div className={styles.skillsContainer}>
           <h2>Tech Stack</h2>
           <div className={styles.skills}>
-            <img src="./img/aws.png" alt="AWS" />
-            <img src="./img/bootstrap.png" alt="Bootstrap" />
-            <img src="./img/C.png" alt="C" />
-            <img src="./img/cpp.png" alt="C++" />
-            <img src="./img/django.png" alt="Django" />
+            {/* Front-end */}
+            <img src="./img/html5.png" alt="HTML5" />
+            {/* Back-end */}
             <img src="./img/docker.png" alt="Docker" />
+            {/* Styling */}
+            <img src="./img/css3.png" alt="CSS3" />
+            <img src="./img/mui.png" alt="MUI" />
+            <img src="./img/bootstrap.png" alt="Bootstrap" />
+            {/*  */}
+            {/* <img src="./img/aws.png" alt="AWS" /> */}
+
+            {/* <img src="./img/C.png" alt="C" /> */}
+            {/* <img src="./img/cpp.png" alt="C++" /> */}
+            <img src="./img/django.png" alt="Django" />
+
             <img src="./img/express.png" alt="Express.JS" />
-            <img src="./img/flask.png" alt="Flask" />
+            {/* <img src="./img/flask.png" alt="Flask" /> */}
             <img src="./img/javascript.png" alt="JavaScript" />
             <img src="./img/mongodb.png" alt="MongoDB" />
-            <img src="./img/mui.png" alt="MUI" />
+
             <img src="./img/netlify.png" alt="Netlify" />
             <img src="./img/nodejs.png" alt="Node.JS" />
             <img src="./img/postgresql.png" alt="PostgreSQL" />
-            <img src="./img/redis.png" alt="Redis" />
+            {/* <img src="./img/redis.png" alt="Redis" /> */}
             <img src="./img/typescript.png" alt="TypeScript" />
-            <img src="./img/css3.png" alt="CSS3" />
-            <img src="./img/html5.png" alt="HTML5" />
+
             <img src="./img/python.png" alt="Python" />
             <img src="./img/react.png" alt="React" />
           </div>

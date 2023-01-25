@@ -27,6 +27,12 @@
   width: auto;
 }
 
+.link > img:hover {
+  transform: scale(110%);
+  transition: 0.25s;
+  image-rendering: optimizeQuality;
+}
+
 .scroll {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
