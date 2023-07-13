@@ -8,11 +8,6 @@ const ProjectStack = (props) => {
           "Tot, or Taste of TikTok for long, is a MERN web app for users who
           want to track and display restaurants, bars, and other lifestyle
           locations that they found through TikTok. It's essentially if Yelp and
-          Tiktok merged. In order to save a tiktok video to the your page,
-          simply copy and paste the URL of the video and Tot will do the rest.
-          You can even play your own videos or play through the countless others
-          that Totheads have uploaded -- no need to switch apps to watch on
-          TikTok! [Currently Mobile-Only Design]",
         </p>
         <ul className={styles.stack}>
           <li>

@@ -1,0 +1,264 @@
+.helloContainer {
+  height: calc(100vh - 3rem);
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  font-family: TypoGraphica;
+  overflow: hidden;
+}
+
+.helloContainer > .right {
+  position: sticky;
+  background-color: white;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  animation: 0.1s fade-in-width 5.9s forwards, 1s display-picture 6s forwards;
+}
+
+.helloContainer > .right > img {
+  position: fixed;
+  height: auto;
+  width: calc((100vw - (100vw - 1300px)) * 0.3);
+  top: 50;
+}
+
+@keyframes fade-in-width {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes display-picture {
+  to {
+    opacity: 1;
+  }
+}
+
+.hi {
+  /* width: 40%; */
+  background-color: red;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: 1s slide 4.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.hi > p {
+  font-size: 8rem;
+  font-family: TypoGraphica;
+  color: white;
+}
+
+.hi > p::before {
+  content: "Hi";
+  animation: 1.25s fade-in-hi, 1.25s fade-out-hi 1.25s, 1.25s fade-in-czesc 2.5s,
+    1.25s fade-out-czesc 3.75s forwards;
+}
+
+@keyframes slide {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes fade-in-hi {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-hi {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-czesc {
+  from {
+    content: "Cześć";
+    opacity: 0;
+  }
+  to {
+    content: "Cześć";
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-czesc {
+  from {
+    content: "Cześć";
+    opacity: 1;
+  }
+  to {
+    content: "Cześć";
+    opacity: 0;
+  }
+}
+
+.name {
+  padding-top: 4rem;
+
+  width: 0%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  animation: 1s appear-name 4.5s forwards;
+
+  /* overflow: hidden; */
+
+  /* transition: 0.5s; */
+}
+
+@keyframes appear-name {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+.name > span {
+  font-size: 4rem;
+
+  transition: 0.5s;
+}
+
+.name > span:first-of-type {
+  transform: translateX(1200px);
+  animation: 1s slide-left 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.name > span:nth-child(2) {
+  transform: translateX(1200px);
+  animation: 1s slide-left 5.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.lastName {
+  color: red;
+  /* text-decoration-color: red; */
+  /* text-decoration: solid underline;
+  text-decoration-style: wavy; */
+  cursor: pointer;
+
+  background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
+  background-size: 20px 0.5rem;
+  background-repeat: repeat-x;
+  background-position: 100% 90%;
+  font-weight: 400;
+  transform: translateX(1200px);
+  animation: move 20s linear infinite,
+    1s slide-left 5.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.pronunciation {
+  color: black;
+  transition: 0.5s;
+}
+
+.pronunciation > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pronunciation > ul > li {
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+.active > ul > li:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.active > ul > li:nth-child(2) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.active > ul > li:nth-child(3) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.active > ul > li:nth-child(4) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.pronunciation > ul > li > span {
+  font-style: italic;
+  color: red;
+  font-size: 2rem;
+}
+
+.pronunciation > ul > li > span:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.pronunciation > ul > li > span:last-of-type {
+  margin-left: 0.5rem;
+  margin-right: 2px;
+}
+
+.active {
+  display: block;
+}
+
+@keyframes move {
+  from {
+    background-position: 100% 90%;
+  }
+  to {
+    background-position: 500% 90%;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.right {
+  min-height: 500px;
+  height: 100%;
+  width: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right > img {
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  border: 5px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px gray;
+  transition: 0.5s;
+}

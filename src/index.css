@@ -4,6 +4,11 @@
   src: url(./fonts/SYNNova-Bold.otf);
 }
 
+:root {
+  --heading-font: TypoGraphica;
+  --body-font: Arial;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -12,6 +17,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
 }
 
 code {
