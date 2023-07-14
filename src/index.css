@@ -8,6 +8,7 @@
   --heading-font: TypoGraphica;
   --body-font: Arial;
   --border-color: white;
+  --block-background: gainsboro;
 }
 
 body {

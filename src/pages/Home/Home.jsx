@@ -52,7 +52,7 @@ export default function Home() {
         <TextHalf title={aboutMe.title} textArr={aboutMe.textArr} />
       </Block>
 
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <div className={styles.left}>
           <h2>Full Stack Developer</h2>
           <p>
@@ -92,7 +92,7 @@ export default function Home() {
             or even fermenting my own foods!
           </p>
         </div>
-      </div>
+      </div> */}
       <div className={styles.container} style={{ minHeight: "250px" }}>
         <TechStack />
         <ProjectStack />
