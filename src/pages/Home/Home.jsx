@@ -5,6 +5,12 @@ import Welcome from "./Welcome";
 import TechStack from "../../components/TechStack/TechStack";
 import ProjectStack from "../../components/ProjectStack/ProjectStack";
 import Block from "../../components/Block/Block";
+import TextHalf from "../../components/Block/TextHalf";
+import ImageHalfCircle from "../../components/Block/ImageHalfCircle";
+import ImageHalfFull from "../../components/Block/ImageHalfFull";
+
+// Data
+import { professionalSummary, aboutMe } from "../../data/about";
 
 export default function Home() {
   const lastRef = useRef();
@@ -31,11 +37,21 @@ export default function Home() {
 
   return (
     <main>
-      <Block
-        title={"BOOTY HOLE"}
-        textArr={["HEEBYDEEBY", "SCOOP SCOOP SCOOP"]}
-      />
       <Welcome />
+
+      <Block>
+        <TextHalf
+          title={professionalSummary.title}
+          textArr={professionalSummary.textArr}
+        />
+        <ImageHalfCircle imgSrc={professionalSummary.img} altText="Profile" />
+      </Block>
+
+      <Block>
+        <ImageHalfFull imgSrc={aboutMe.img} altText="Pierogi" />
+        <TextHalf title={aboutMe.title} textArr={aboutMe.textArr} />
+      </Block>
+
       <div className={styles.container}>
         <div className={styles.left}>
           <h2>Full Stack Developer</h2>

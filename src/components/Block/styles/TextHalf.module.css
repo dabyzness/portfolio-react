@@ -1,0 +1,47 @@
+.container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.container > h2 {
+  font-size: 2.5rem;
+  font-family: TypoGraphica;
+  letter-spacing: 6px;
+  margin: 0;
+}
+
+.container > p {
+  width: 85%;
+  line-height: 2rem;
+}
+
+.left > * {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.left > h2 {
+  text-align: right;
+}
+
+.left > p {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.right > * {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.right > h2 {
+  text-align: left;
+}
+
+.right > p {
+  margin-right: auto;
+  margin-left: 5px;
+}
