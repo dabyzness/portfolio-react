@@ -14,5 +14,5 @@ export const aboutMe = {
     `I’m a first generation immigrant of Polish descent. Though I emigrated from Poland when I was young, I hold my culture close to my heart. I am deeply saddened whenever there aren't any good pickles, kielbasa, or loaves of bread nearby. I'm sure by the adjacent image you can tell what my favorite food is (it's pierogi)`,
     `During my spare time I like to go hiking with my dog, Beans, watch arthouse films, collect records, and cook extravagant meals. I have a pretty heavy-duty DIY attitude so occasionally you might find me tinkering with a Raspberry Pi, woodworking, gardening, embroidering, or even fermenting my own foods!`,
   ],
-  img: `/img/pierogi.png`,
+  img: `/img/pierogi2.png`,
 };

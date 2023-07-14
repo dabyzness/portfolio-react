@@ -11,6 +11,8 @@ import ImageHalfFull from "../../components/Block/ImageHalfFull";
 
 // Data
 import { professionalSummary, aboutMe } from "../../data/about";
+import InfiniteLooper from "../../components/InfiniteLooper/InfiniteLooper";
+import { stackImg } from "../../data/stackImg";
 
 export default function Home() {
   const lastRef = useRef();
@@ -20,13 +22,13 @@ export default function Home() {
   const profileRef = useRef();
 
   const updatePosition = () => {
-    if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
-      welcomeRef.current.style.display = "none";
-      profileRef.current.style.display = "block";
-    } else {
-      profileRef.current.style.display = "none";
-      welcomeRef.current.style.display = "block";
-    }
+    // if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
+    //   welcomeRef.current.style.display = "none";
+    //   profileRef.current.style.display = "block";
+    // } else {
+    //   profileRef.current.style.display = "none";
+    //   welcomeRef.current.style.display = "block";
+    // }
   };
 
   window.addEventListener("scroll", updatePosition);
@@ -51,6 +53,18 @@ export default function Home() {
         <ImageHalfFull imgSrc={aboutMe.img} altText="Pierogi" />
         <TextHalf title={aboutMe.title} textArr={aboutMe.textArr} />
       </Block>
+
+      {/* <TechStack /> */}
+      <InfiniteLooper speed="10" direction="left">
+        {Object.entries(stackImg).map((entry, i) => (
+          <img
+            key={i}
+            src={entry[1]}
+            alt={entry[0]}
+            style={{ padding: "0 1rem", height: "50px" }}
+          />
+        ))}
+      </InfiniteLooper>
 
       {/* <div className={styles.container}>
         <div className={styles.left}>
@@ -93,28 +107,27 @@ export default function Home() {
           </p>
         </div>
       </div> */}
-      <div className={styles.container} style={{ minHeight: "250px" }}>
+      {/* <div className={styles.container} style={{ minHeight: "250px" }}>
         <TechStack />
         <ProjectStack />
-      </div>
-      {/* 
-      <div className={styles.container}>
+      </div> */}
+
+      {/* <div className={styles.container}>
         <div className={styles.skillsContainer}>
           <h2>Tech Stack</h2>
           <div className={styles.skills}>
-     
             <img src="./img/html5.png" alt="HTML5" />
-         
+
             <img src="./img/docker.png" alt="Docker" />
-        
+
             <img src="./img/css3.png" alt="CSS3" />
             <img src="./img/mui.png" alt="MUI" />
             <img src="./img/bootstrap.png" alt="Bootstrap" />
- 
+
             <img src="./img/django.png" alt="Django" />
 
             <img src="./img/express.png" alt="Express.JS" />
-          
+
             <img src="./img/javascript.png" alt="JavaScript" />
             <img src="./img/mongodb.png" alt="MongoDB" />
 
@@ -128,8 +141,7 @@ export default function Home() {
             <img src="./img/react.png" alt="React" />
           </div>
         </div>
-      </div>
-      */}
+      </div> */}
 
       {/* <div className={styles.container}>
         <div className={styles.left}>

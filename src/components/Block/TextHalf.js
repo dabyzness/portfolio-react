@@ -5,8 +5,8 @@ const TextHalf = ({ title, textArr, ref = null, side = "left" }) => {
   return (
     <div className={`${styles.container} ${styles[side]}`} ref={ref}>
       <h2>{title}</h2>
-      {textArr.map((text) => (
-        <p>{text}</p>
+      {textArr.map((text, i) => (
+        <p key={i}>{text}</p>
       ))}
     </div>
   );

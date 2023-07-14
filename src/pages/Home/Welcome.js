@@ -9,13 +9,13 @@ const Welcome = (props) => {
   const profileRef = useRef();
 
   const updatePosition = () => {
-    if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
-      welcomeRef.current.style.display = "none";
-      profileRef.current.style.display = "block";
-    } else {
-      profileRef.current.style.display = "none";
-      welcomeRef.current.style.display = "block";
-    }
+    // if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
+    //   welcomeRef.current.style.display = "none";
+    //   profileRef.current.style.display = "block";
+    // } else {
+    //   profileRef.current.style.display = "none";
+    //   welcomeRef.current.style.display = "block";
+    // }
   };
 
   window.addEventListener("scroll", updatePosition);
