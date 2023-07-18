@@ -2,8 +2,8 @@ export const projects = [
   {
     title: "Riffin",
     description:
-      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
-    img: "./img/tot.png",
+      "Riffin takes the hassle out of writing tablature so you can focus on capturing the music. Simply click anywhere on the staff to start writing. No pesky dashes, no cumbersome software. Let your creativity flow with Riffin.io. I redesigned and optimized the entire backend and databased. I continue to work on front-end design and integration, as well as making any necessary changes to the backend. [Version 1 will be launching soon!]",
+    img: "./img/riffin.PNG",
     repositoryLink: "https://github.com/dabyzness/tot-front-end",
     deploymentLink: "https://tots-hot-tots.netlify.app/",
     stack: [
@@ -21,27 +21,8 @@ export const projects = [
   {
     title: "Amass",
     description:
-      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
-    img: "./img/tot.png",
-    repositoryLink: "https://github.com/dabyzness/tot-front-end",
-    deploymentLink: "https://tots-hot-tots.netlify.app/",
-    stack: [
-      "react",
-      "javascript",
-      "express",
-      "mongodb",
-      "mui",
-      "nodejs",
-      "bootstrap",
-      "html5",
-      "css3",
-    ],
-  },
-  {
-    title: "",
-    description:
-      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
-    img: "./img/tot.png",
+      "Amass is an all-in-one real estate application for new or small-time owners and their tenants. It is a comprehensive software solution designed to assist individuals who are entering the real estate market or managing a small portfolio of properties. This application aims to streamline various aspects of property ownership, providing users with tools and resources to simplify their tasks and maximize their efficiency. [This project is currently on hold for development]",
+    img: "./img/amass.PNG",
     repositoryLink: "https://github.com/dabyzness/tot-front-end",
     deploymentLink: "https://tots-hot-tots.netlify.app/",
     stack: [
@@ -59,7 +40,7 @@ export const projects = [
   {
     title: "ToT",
     description:
-      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
+      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Mobile-Only Design]",
     img: "./img/tot.png",
     repositoryLink: "https://github.com/dabyzness/tot-front-end",
     deploymentLink: "https://tots-hot-tots.netlify.app/",
@@ -78,7 +59,7 @@ export const projects = [
   {
     title: "Plantra",
     description:
-      "Welcome to Plantra, a place to track and share your plants with the world. Set a watering schedule for your plants, check your calendar to see which plants you have to water, upload pictures of your plants and keep track of it's growth! View what others are posting and like and comment to see their plant collection! [Currently Mobile-Only Design]",
+      "Welcome to Plantra, a place to track and share your plants with the world. Set a watering schedule for your plants, check your calendar to see which plants you have to water, upload pictures of your plants and keep track of it's growth! View what others are posting and like and comment to see their plant collection! [Mobile-Only Design]",
     img: "./img/plantra.png",
     repositoryLink: "https://github.com/dabyzness/plantra",
     deploymentLink: "https://plantra.fly.dev/",
@@ -111,4 +92,23 @@ export const projects = [
     deploymentLink: "https://tic-tac-toe-pro-no.netlify.app",
     stack: ["javascript", "html5", "css3"],
   },
+  // {
+  //   title: "Current",
+  //   description:
+  //     "A time management methodology that incorporates the rigidity of time blocking into our hectic and chaotic days. It allows users to take a more flexible approach to goal setting and time management while sticking to a predetermined schedule. Additionally, it allows for leaving notes and reminders to automatically appear the next time the task is repeated. It also allows for periods of reflection. Thi",
+  //   img: "./img/swift.png",
+  //   repositoryLink: "https://github.com/dabyzness/tot-front-end",
+  //   deploymentLink: "https://tots-hot-tots.netlify.app/",
+  //   stack: [
+  //     "react",
+  //     "javascript",
+  //     "express",
+  //     "mongodb",
+  //     "mui",
+  //     "nodejs",
+  //     "bootstrap",
+  //     "html5",
+  //     "css3",
+  //   ],
+  // },
 ];
