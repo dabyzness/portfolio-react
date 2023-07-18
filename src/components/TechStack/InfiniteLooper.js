@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from "react";
-import styles from "./InfiniteLooper.module.css";
+import styles from "./styles/InfiniteLooper.module.css";
 
 function InfiniteLooper({ speed, direction, children }) {
   const [looperInstances, setLooperInstances] = useState(1);

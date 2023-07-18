@@ -1,6 +1,6 @@
-import InfiniteLooper from "../InfiniteLooper/InfiniteLooper";
+import InfiniteLooper from "./InfiniteLooper";
 
-import styles from "./TechStack.module.css";
+import styles from "./styles/TechStack.module.css";
 import { stackImg } from "../../data/stackImg";
 
 const TechStack = (props) => {

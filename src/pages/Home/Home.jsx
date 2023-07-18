@@ -11,7 +11,7 @@ import ImageHalfFull from "../../components/Block/ImageHalfFull";
 
 // Data
 import { professionalSummary, aboutMe } from "../../data/about";
-import InfiniteLooper from "../../components/InfiniteLooper/InfiniteLooper";
+import InfiniteLooper from "../../components/TechStack/InfiniteLooper";
 import { stackImg } from "../../data/stackImg";
 
 export default function Home() {
