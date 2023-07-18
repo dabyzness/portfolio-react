@@ -1,5 +1,5 @@
 // Modules
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 // CSS
 import "./App.css";
@@ -52,6 +52,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:projectDetails" element={<ProjectDetails />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer isBottom={isBottom} />
     </>
