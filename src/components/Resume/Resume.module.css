@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewContainer {
+  display: flex;
+}
+
+.clickMe {
+  height: 25px;
+  padding: 0 1rem;
+  color: red;
+}
+
+.clickMe:nth-of-type(1) {
+  animation: 2s tract1 linear infinite;
+}
+
+.clickMe:nth-of-type(2) {
+  animation: 2s tract2 linear infinite;
+}
+
+.viewResume {
+  font-size: large;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.viewResume:hover {
+  color: red;
+}
+
+@keyframes tract1 {
+  0% {
+    transform: translateX(15%);
+  }
+
+  50% {
+    transform: translateX(0%) scale(75%);
+  }
+
+  100% {
+    transform: translateX(15%) scale(100%);
+  }
+}
+
+@keyframes tract2 {
+  0% {
+    transform: translateX(-15%);
+  }
+
+  50% {
+    transform: translateX(0%) scale(75%);
+  }
+
+  100% {
+    transform: translateX(-15%) scale(100%);
+  }
+}
+
+.btnSlide2 {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 50px;
+  background: #fdfdfd;
+  border: 2px solid #cc0000;
+  margin: 20px 10px;
+  transition: 0.5s;
+}
+
+.btnSlide2 {
+  border: 2px solid #cc0000;
+}
+
+.btnSlide2:hover {
+  background-color: #cc0000;
+}
+
+.btnSlide2:hover span.circle2 {
+  left: 100%;
+  margin-left: -45px;
+  background-color: #fdfdfd;
+  color: #cc0000;
+}
+
+.btnSlide2:hover span.title2 {
+  left: 40px;
+  opacity: 0;
+}
+
+.btnSlide2 span.circle2 {
+  display: block;
+  background-color: #cc0000;
+  color: #fff;
+  position: absolute;
+  float: left;
+  margin: 5px;
+  line-height: 42px;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.btn-slide2 span.circle2 {
+  background-color: #cc0000;
+}
+
+.btnSlide2 span.title2,
+.btnSlide2 span.titleHover2 {
+  position: absolute;
+  left: 90px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #30abd5;
+  transition: 0.5s;
+}
+
+.btnSlide2 span.title2,
+.btnSlide2 span.titleHover2 {
+  color: #cc0000;
+  left: 80px;
+}
+
+.btnSlide2 span.titleHover2 {
+  left: 80px;
+  opacity: 0;
+}
+
+.btnSlide2 span.titleHover2 {
+  color: #fff;
+}
+
+.btnSlide2:hover span.titleHover2 {
+  opacity: 1;
+  left: 40px;
+}

@@ -25,6 +25,7 @@
   margin-left: 8px;
   font-family: TypoGraphica;
   font-size: 1.5rem;
+  cursor: pointer;
   /* animation: 1s bottom-up infinite; */
 }
 
@@ -39,6 +40,8 @@
 
 .item {
   margin: 0 8px;
+  font-weight: 700;
+  font-size: large;
 }
 
 .item:nth-child(2) {

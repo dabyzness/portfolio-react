@@ -13,6 +13,7 @@ import ImageHalfFull from "../../components/Block/ImageHalfFull";
 import { professionalSummary, aboutMe } from "../../data/about";
 import InfiniteLooper from "../../components/TechStack/InfiniteLooper";
 import { stackImg } from "../../data/stackImg";
+import Resume from "../../components/Resume/Resume";
 
 export default function Home() {
   const lastRef = useRef();
@@ -32,10 +33,6 @@ export default function Home() {
   };
 
   window.addEventListener("scroll", updatePosition);
-
-  const handleClick = (e) => {
-    lastRef.current.className = `${styles.pronunciation} ${styles.active}`;
-  };
 
   return (
     <main>
@@ -57,6 +54,8 @@ export default function Home() {
         <ImageHalfFull imgSrc={aboutMe.img} altText="Pierogi" />
         <TextHalf title={aboutMe.title} textArr={aboutMe.textArr} />
       </Block>
+
+      <Resume />
     </main>
   );
 }
