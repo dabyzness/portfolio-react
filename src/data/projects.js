@@ -1,5 +1,62 @@
 export const projects = [
   {
+    title: "Riffin",
+    description:
+      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
+    img: "./img/tot.png",
+    repositoryLink: "https://github.com/dabyzness/tot-front-end",
+    deploymentLink: "https://tots-hot-tots.netlify.app/",
+    stack: [
+      "react",
+      "javascript",
+      "express",
+      "mongodb",
+      "mui",
+      "nodejs",
+      "bootstrap",
+      "html5",
+      "css3",
+    ],
+  },
+  {
+    title: "Amass",
+    description:
+      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
+    img: "./img/tot.png",
+    repositoryLink: "https://github.com/dabyzness/tot-front-end",
+    deploymentLink: "https://tots-hot-tots.netlify.app/",
+    stack: [
+      "react",
+      "javascript",
+      "express",
+      "mongodb",
+      "mui",
+      "nodejs",
+      "bootstrap",
+      "html5",
+      "css3",
+    ],
+  },
+  {
+    title: "",
+    description:
+      "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
+    img: "./img/tot.png",
+    repositoryLink: "https://github.com/dabyzness/tot-front-end",
+    deploymentLink: "https://tots-hot-tots.netlify.app/",
+    stack: [
+      "react",
+      "javascript",
+      "express",
+      "mongodb",
+      "mui",
+      "nodejs",
+      "bootstrap",
+      "html5",
+      "css3",
+    ],
+  },
+  {
     title: "ToT",
     description:
       "Tot, or Taste of TikTok for long, is a MERN web app for users who want to track and display restaurants, bars, and other lifestyle locations that they found through TikTok. It's essentially if Yelp and Tiktok merged. In order to save a tiktok video to the your page, simply copy and paste the URL of the video and Tot will do the rest. You can even play your own videos or play through the countless others that Totheads have uploaded -- no need to switch apps to watch on TikTok! [Currently Mobile-Only Design]",
@@ -53,14 +110,5 @@ export const projects = [
       "https://github.com/dabyzness/ttt-weekend/tree/main/version2",
     deploymentLink: "https://tic-tac-toe-pro-no.netlify.app",
     stack: ["javascript", "html5", "css3"],
-  },
-  {
-    title: "CLI Pokemon",
-    description:
-      "This was my first foray into TypeScript. I had taken a simple homework exercise in Classes with JavaScript and expanded it to be a playable game with the command-line. It's a bit crude but it taught me a lot about the language.",
-    img: "./img/pokemoncli.PNG",
-    repositoryLink: "https://github.com/dabyzness/pokemon-interactive-cli",
-    deploymentLink: "",
-    stack: ["typescript", "nodejs"],
   },
 ];

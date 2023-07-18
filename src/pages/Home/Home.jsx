@@ -51,6 +51,8 @@ export default function Home() {
 
       <TechStack />
 
+      <ProjectStack />
+
       <Block>
         <ImageHalfFull imgSrc={aboutMe.img} altText="Pierogi" />
         <TextHalf title={aboutMe.title} textArr={aboutMe.textArr} />

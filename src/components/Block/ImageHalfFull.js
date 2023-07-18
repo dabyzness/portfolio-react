@@ -1,14 +1,24 @@
 // Styles
 import styles from "./styles/ImageHalfFull.module.css";
 
-const ImageHalfFull = ({ imgSrc, altText, ref = null }) => {
+const ImageHalfFull = ({
+  imgSrc,
+  altText,
+  repeat = true,
+  ref = null,
+  isBackground = true,
+}) => {
   return (
     <div
-      className={`${styles.container} ${styles.full}`}
-      style={{ backgroundImage: `url(${imgSrc})` }}
+      className={`${styles.container} ${repeat === true ? styles.repeat : ""}`}
+      style={{ backgroundImage: isBackground ? `url(${imgSrc})` : "" }}
       aria-label={altText}
       ref={ref}
-    ></div>
+    >
+      {!isBackground && (
+        <img src={imgSrc} alt={altText} className={styles.full} />
+      )}
+    </div>
   );
 };
 

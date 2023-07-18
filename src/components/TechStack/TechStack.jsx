@@ -3,7 +3,7 @@ import InfiniteLooper from "./InfiniteLooper";
 import styles from "./styles/TechStack.module.css";
 import { stackImg } from "../../data/stackImg";
 
-const TechStack = (props) => {
+const TechStack = () => {
   return (
     <div className={styles.container}>
       <h2>Tech Stack</h2>

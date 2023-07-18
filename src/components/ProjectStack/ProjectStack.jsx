@@ -1,41 +1,48 @@
+import { useState } from "react";
+
+import Block from "../Block/Block";
+import TextHalf from "../Block/TextHalf";
+
 import styles from "./ProjectStack.module.css";
 
-const ProjectStack = (props) => {
+import { projects } from "../../data/projects";
+import SelectionHalf from "../Block/SelectionHalf";
+import ImageHalfFull from "../Block/ImageHalfFull";
+
+const ProjectStack = () => {
+  const [currProject, setCurrProject] = useState(projects[0]);
+
+  function onSelect(e) {
+    console.log(e.target.innerHTML);
+    setCurrProject(
+      projects.find((project) => project.title === e.target.innerHTML)
+    );
+  }
+
   return (
     <div className={styles.container}>
-      <div className={styles.projects}>
-        <p style={{ width: "40%" }}>
-          "Tot, or Taste of TikTok for long, is a MERN web app for users who
-          want to track and display restaurants, bars, and other lifestyle
-          locations that they found through TikTok. It's essentially if Yelp and
-        </p>
-        <ul className={styles.stack}>
-          <li>
-            <img src="./img/react.png" alt="" />
-            React.JS
-          </li>
-          <li>
-            <img src="./img/typescript.png" alt="" />
-            TypeScript
-          </li>
-          <li>
-            <img src="./img/postgresql.png" alt="" />
-            Postgres
-          </li>
-          <li>
-            <img src="./img/mongodb.png" alt="" />
-            MongoDB
-          </li>
-          <li>
-            <img src="./img/python.png" alt="" />
-            Python
-          </li>
-        </ul>
-      </div>
-
-      <div className={styles.rightBorder}></div>
-      <div className={styles.bottomBorder}></div>
-      <h2 className={styles.projectsHeading}>Projects</h2>
+      <h2>Projects</h2>
+      <Block>
+        <Block>
+          <SelectionHalf
+            options={projects.map((project) => project.title)}
+            onSelect={onSelect}
+            selected={currProject.title}
+          />
+          <TextHalf
+            title={""}
+            textArr={[currProject.description]}
+            // side="right"
+            sx={{ width: "75%" }}
+          />
+        </Block>
+        <ImageHalfFull
+          imgSrc={currProject.img}
+          altText={currProject.title}
+          repeat={false}
+          isBackground={false}
+        />
+      </Block>
     </div>
   );
 };

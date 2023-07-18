@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.selected {
+  color: red;
+}
+
+.option {
+  cursor: pointer;
+}
+
+.option:hover {
+}
