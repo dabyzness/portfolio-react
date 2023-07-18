@@ -42,6 +42,7 @@
   margin: 0 8px;
   font-weight: 700;
   font-size: large;
+  cursor: pointer;
 }
 
 .item:nth-child(2) {

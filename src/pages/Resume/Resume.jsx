@@ -134,7 +134,7 @@ const Resume = () => {
       </VerticalTimeline>
 
       <a
-        href={require("./DamianBzdyra-resume.pdf")}
+        href={require("./DamianBzdyraResume.pdf")}
         className={styles.btnSlide2}
         download
       >

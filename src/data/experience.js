@@ -20,6 +20,25 @@ export const experience = [
     ],
   },
   {
+    company: "Freelance",
+    title: "Full Stack Developer",
+    type: "work",
+    logo: "./img/freelance.png",
+    banner: "./img/freelance-banner.PNG",
+    start: "1/23",
+    end: "current",
+    location: "Remote",
+    description: [
+      "Designed and built efficient, well-documented, and reusable code while balancing multiple projects in a team environment",
+      "Defined user stories, compartmentalized them into actionable tasks, and distributed them to proper teams",
+      "Instituted development environment with linter (ESLint), code formatter (Prettier) and type safety (JSDoc) for uniformity",
+      "Collaborated with a team of diverse developers using Agile methodologies, JIRA, and Confluence",
+      "Implemented WebSocket API to build an event-driven microservice for chat messaging application",
+      "Documented REST API and models to OpenAPI specifications with Swagger and created error logging/handling middleware",
+      "Automated unit, integration, and end-to-end test suites with Jest, Mocha, Selenium, and Postman to ensure 100% coverage",
+    ],
+  },
+  {
     company: "General Assembly",
     title: "Software Engineer Fellow",
     type: "education",
@@ -29,11 +48,13 @@ export const experience = [
     end: "11/22",
     location: "Remote",
     description: [
-      "Completed an expert-led, 500+ hour, 12 week intensive Software Engineering Immersive Bootcamp",
-      "Acquired expertise in Javascript frameworks, front-end and back-end technologies, and relational/non-relational databases",
-      "Tot - A mobile-first React Single-Page Application built to keep track of locations that a user would like to visit. It's a cross between TikTok and Yelp to produce more meaningful reviews",
-      "Plantra - Community based plant-tracking web app with an Instagram-inspired UI, designed under an MVC framework and programmed on a MEN stack. Used Google OAuth for authentication, an AWS S3 Bucket for image upload, and exposed the app's API to implement DOM-manipulated features such as Infinite Scroll",
-      "Pacman - Cloned the arcade classic Pacman in pure JavaScript, HTML, and CSS (no Canvas or JQuery)",
+      `Completed an expert-led, 500+ hour, 12-week intensive software engineering bootcamp, gaining familiarity with modern
+      web frameworks (React) and industry-standard programming languages and tools (Javascript, Node.js, MongoDB, Git)`,
+      "Mentored colleagues by explaining technical information to a non-technical audience and provided functional code reviews",
+      `Developed multiple web applications from ideation to deployment, gaining practical experience with the full software
+      development lifecycle and project management methodologies`,
+      `Demonstrated a strong ability to learn and adapt quickly to new technologies and programming languages, as evidenced by
+      consistent growth and improvement through the bootcamp`,
     ],
   },
   {
@@ -48,10 +69,10 @@ export const experience = [
     location: "Miami, FL",
     description: [
       "Completed a full build-out of a 6000 sq ft turn-key hemp extraction facility",
-      "Generated investors, raised capital, and managed a budget of $500,000",
-      "Oversaw the full-cycle development of dozens of CBD consumer products",
-      "Analyzed market trends monthly and adapted to market movements",
-      "Communicated regularly and effectively with stakeholders with regards to status and milestones",
+      "Built and managed relationships with vendors and conducted negotiations to secure optimal pricing for materials",
+      "Developed and implemented company SOPs to meet safety regulations and ensure GMP compliance",
+      "Coordinated all aspects of logistics for a supply chain extracting 30K pounds of hemp per month",
+      "Performed thorough market research and competitive analysis to effectively communicate product value proposition",
     ],
   },
   {
@@ -65,11 +86,10 @@ export const experience = [
     location: "Holmdel, NJ",
     description: [
       "Managed and reported financial statements; wrote Python + Excel program to automate 90% of the work",
-      "Hired, trained, and managed team of 12 employees",
+      "Oversaw all aspects of the hiring process, developed a results-driven culture centered on accountability and collaboration",
       "Expanded the craft beer department’s selection and quality, more than doubling it in size",
       "Spearheaded marketing strategies and increased overall sales and revenue by 15%",
-      "Reorganized and updated store layout; maximized physical goods capacity by 10%",
-      "Maintained relationships with vendors and founded many relationships with new vendors",
+      "Reorganized and updated store layout to maximize physical goods capacity by 10%",
     ],
   },
   {

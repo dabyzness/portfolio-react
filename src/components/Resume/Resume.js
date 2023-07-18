@@ -23,7 +23,7 @@ const Resume = () => {
       </div>
 
       <a
-        href={require("../../pages/Resume/DamianBzdyra-resume.pdf")}
+        href={require("../../pages/Resume/DamianBzdyraResume.pdf")}
         className={styles.btnSlide2}
         download
       >
