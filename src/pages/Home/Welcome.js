@@ -1,24 +1,8 @@
-import { useRef } from "react";
+import { useRef, forwardRef } from "react";
 import styles from "./Welcome.module.css";
 
-const Welcome = (props) => {
+const Welcome = forwardRef((props, ref) => {
   const lastRef = useRef();
-
-  // This needs fixing because its not a smooth transition
-  const welcomeRef = useRef();
-  const profileRef = useRef();
-
-  const updatePosition = () => {
-    // if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
-    //   welcomeRef.current.style.display = "none";
-    //   profileRef.current.style.display = "block";
-    // } else {
-    //   profileRef.current.style.display = "none";
-    //   welcomeRef.current.style.display = "block";
-    // }
-  };
-
-  window.addEventListener("scroll", updatePosition);
 
   const handleClick = (e) => {
     lastRef.current.className = `${styles.pronunciation} ${styles.active}`;
@@ -54,10 +38,10 @@ const Welcome = (props) => {
       </div>
 
       <div className={styles.right}>
-        <img src="./img/profile.jpg" alt="profile" ref={welcomeRef} />
+        <img src="./img/profile.jpg" alt="profile" ref={ref} />
       </div>
     </div>
   );
-};
+});
 
 export default Welcome;

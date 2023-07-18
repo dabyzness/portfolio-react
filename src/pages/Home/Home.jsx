@@ -11,39 +11,46 @@ import ImageHalfFull from "../../components/Block/ImageHalfFull";
 
 // Data
 import { professionalSummary, aboutMe } from "../../data/about";
+import { useState, useEffect } from "react";
 import InfiniteLooper from "../../components/TechStack/InfiniteLooper";
 import { stackImg } from "../../data/stackImg";
 import Resume from "../../components/Resume/Resume";
 
 export default function Home() {
-  const lastRef = useRef();
-
   // This needs fixing because its not a smooth transition
   const welcomeRef = useRef();
   const profileRef = useRef();
 
   const updatePosition = () => {
-    // if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
-    //   welcomeRef.current.style.display = "none";
-    //   profileRef.current.style.display = "block";
-    // } else {
-    //   profileRef.current.style.display = "none";
-    //   welcomeRef.current.style.display = "block";
-    // }
+    if (!welcomeRef.current || !profileRef.current) {
+      return;
+    }
+
+    if (window.innerHeight - window.scrollY < window.innerHeight * 0.3333) {
+      welcomeRef.current.style.display = "none";
+      profileRef.current.style.display = "block";
+    } else {
+      profileRef.current.style.display = "none";
+      welcomeRef.current.style.display = "block";
+    }
   };
 
   window.addEventListener("scroll", updatePosition);
 
   return (
     <main>
-      <Welcome />
+      <Welcome ref={welcomeRef} />
 
       <Block>
         <TextHalf
           title={professionalSummary.title}
           textArr={professionalSummary.textArr}
         />
-        <ImageHalfCircle imgSrc={professionalSummary.img} altText="Profile" />
+        <ImageHalfCircle
+          imgSrc={professionalSummary.img}
+          altText="Profile"
+          ref={profileRef}
+        />
       </Block>
 
       <TechStack />

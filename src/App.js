@@ -18,6 +18,9 @@ function App() {
   const [show, setShow] = useState(false);
   const [scrollPos, setScrollPos] = useState(window.scrollY);
   const [isBottom, setIsBottom] = useState(false);
+  console.log(scrollPos);
+  console.log("weep weep", window.innerHeight);
+  console.log(`scrolly wolly`, document.body.scrollHeight);
 
   window.addEventListener("scroll", updatePosition);
 
@@ -32,7 +35,7 @@ function App() {
       setShow(false);
     }
 
-    if (scrollPos > 2030) {
+    if (scrollPos > 1790) {
       setIsBottom(true);
     } else {
       setIsBottom(false);
